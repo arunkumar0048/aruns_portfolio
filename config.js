@@ -1,5 +1,6 @@
 import { FaDiscord, FaGithub, FaMapPin } from "react-icons/fa";
 import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi";
+const basePath = process.env.NODE_ENV === "production" ? "/aruns_portfolio" : "";
 
 export const config = {
     developer: {
@@ -19,7 +20,7 @@ export const config = {
             id: 1,
             title: "Machine Learning & Deep Learning using TensorFlow and Aws Sagemaker",
             description: "Built and trained models using TensorFlow and PyTorch for computer vision, NLP, and multimodal tasks, leveraging CNNs, RNNs, LSTMs, and Transformers architectures.",
-            image: "/projects/project-1.webp",
+            image: `${basePath}/projects/project-1.webp`,
             technologies: ["Python", "TensorFlow", "Pytorch", "AWS Sagemaker", "Hugging Face"],
             github: "#",
         },
@@ -27,7 +28,7 @@ export const config = {
             id: 2,
             title: "AI Model Creation, Fine-Tuning & Optimization",
             description: "Fine-tuned large language models (LLMs) using Unsloth for efficient adaptation on domain-specific datasets, reducing training time by up to 40% compared to standard Hugging Face pipelines..",
-            image: "/projects/project-2.webp",
+            image: `${basePath}/projects/project-2.webp`,
             technologies: ["Python", "TensorFlow", "Pytorch", "AWS Sagemaker", "Hugging Face", "Unsloth", "Dify"],
             github: "#",
         },
@@ -35,7 +36,7 @@ export const config = {
             id: 3,
             title: "Build a E-commerce Website for Supply Chain Management",
             description: "Build a robust e-commerce platform tailored for supply chain management to streamline procurement, inventory, and order fulfillment across all partners.",
-            image: "/projects/project-3.webp",
+            image: `${basePath}/projects/project-3.webp`,
             technologies: ["Django", "Odoo", "Typescript", "PostgreSQL", "AWS", "Docker"],
             github: "#",
         },
@@ -43,7 +44,7 @@ export const config = {
             id: 4,
             title: "Payment Gateway Integration with Odoo",
             description: "Seamlessly integrate secure and reliable payment gateways with Odoo to automate online transactions and improve customer checkout experiences.",
-            image: "/projects/project-4.webp",
+            image: `${basePath}/projects/project-4.webp`,
             technologies: ["Odoo", "Typescript", "PostgreSQL", "Odoo Sh", "Docker"],
             github: "#",
         },
@@ -51,7 +52,7 @@ export const config = {
             id: 5,
             title: "Developed Backend ERP software for Hotel Booking system",
             description: "• Developed database schemas, data models, and API endpoints to support the hotel booking functionalities and implemented backend functionalities using Python, Odoo.",
-            image: "/projects/project-5.webp",
+            image: `${basePath}/projects/project-5.webp`,
             technologies: ["Python", "Odoo", "Typescript", "PostgreSQL", "Docker"],
             github: "#",
             demo: "https://www.blueoceanholidayhomes.com/"
