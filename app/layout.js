@@ -7,6 +7,8 @@ import Header from "@/components/Header";
 import { Toaster } from "sonner";
 import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
+const basePath = process.env.NODE_ENV === "production" ? "/aruns_portfolio" : "";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +19,7 @@ const geistSans = localFont({
 export const metadata = {
   title: "Arun\'s Portfolio",
   icons:{
-icon: "/logo.png"
+     icon: `${basePath}/logo.png`,
   },
   description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
   keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
